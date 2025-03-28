@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Location de camions et engins de chantier pour professionnels.">
+    <title>Location Camions et Engins de Chantier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Section d'accueil avec vidéo -->
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="./assets/presentation.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+        <div class="header-content">
+            <img src="./assets/logo.png" alt="Logo Société" class="logo">
+        </div>
+    </header>
+
+    <!-- Section pour demander un devis -->
+    <section id="demande-devis">
+        <div class="container">
+            <h2>GENEIX, la solution pour vos travaux</h2>
+            <p>Besoin de louer un camion ou un engin de chantier ? Remplissez le formulaire ci-dessous pour obtenir un devis rapide.</p>
+            <a href="#contact-form" class="cta-button">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Location de camions</h3>
+                    <p>Nous proposons une large gamme de camions adaptés à tous vos besoins de transport de matériaux.</p>
+                </div>
+                <div class="service">
+                    <h3>Location d'engins de chantier</h3>
+                    <p>Engins performants et robustes pour tous vos travaux de construction et d'aménagement.</p>
+                </div>
+                <div class="service">
+                    <h3>Location longue durée</h3>
+                    <p>Des solutions de location longue durée pour les professionnels avec des tarifs avantageux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section détaillée par service -->
+    <section id="details-services">
+        <div class="container">
+            <div class="service-detail">
+                <h3>Location de camions</h3>
+                <img src="./assets/camion.jpeg" alt="Camion" class="service-img">
+                <p>Nos camions sont disponibles pour tous types de besoins, du transport de matériaux lourds à la livraison sur chantiers.</p>
+            </div>
+            <div class="service-detail">
+                <h3>Location d'engins de chantier</h3>
+                <img src="./assets/pelle.jpeg" alt="Engin de chantier" class="service-img">
+                <p>Notre flotte d'engins de chantier est disponible pour des projets de toutes tailles, garantissant efficacité et sécurité.</p>
+            </div>
+            <div class="service-detail">
+                <h3>Location longue durée</h3>
+                <img src="./assets/camion-geneix.jpeg" alt="Location longue durée" class="service-img">
+                <p>Optimisez vos coûts en optant pour une location longue durée sur mesure, adaptée à vos besoins spécifiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact (bas de page) -->
+    <section id="contact-form">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GENEIX Société - Tous droits réservés</p>
+        </div>
+    </footer>
+
+</body>
+</html>
